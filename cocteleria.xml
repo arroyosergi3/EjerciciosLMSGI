@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cocteleria SYSTEM "cocteleria.dtd">
+<cocteleria nombre="Coctelería Paco" >
+    <cocteles>
+        <coctel codigoBebida="cocoloco" bebidaPrincipal="Ron">
+            <nombre>Coco Loco</nombre>
+            <alcohol/>
+            <precio coste="10"/>
+            <existencias/>
+        </coctel>
+        <coctel codigoBebida="bloodymary" bebidaPrincipal="ginebra">
+            <nombre>Bloody Mary con &azucar;</nombre>
+            <alcohol/>
+            <precio coste ="12"/>
+            <agotado/>
+        </coctel>
+    </cocteles>
+    <ofertas>
+        <oferta>
+            <coctelReferido codigoBebida="cocoloco" alcoholCombinado="Ron"/>
+        </oferta>
+    </ofertas>
+</cocteleria>
