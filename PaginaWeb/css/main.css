@@ -1,0 +1,35 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.ul{
+    background-color: aquamarine;
+    color: blueviolet;
+    list-style-type: none;
+    
+}
+
+ul li{
+    display: inline-block;
+}
+
+.menus{
+    display: flex;
+    list-style-type: none;
+}
+.rigth{
+    text-align: right;
+}
+.header{
+    display: float;
+}
+.divsmenus{
+    display: inline-block;
+}
+
+div{
+    display: flex;
+}
