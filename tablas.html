@@ -2,17 +2,80 @@
 <html lang ="es">
     <head>
         <style>
+            body{
+                font-family: 'Segoe UI';
+            }
             table{
                 
                 width: 100%;
+                border-style: groove;
+                border-color: cadetblue;
+
+                
+                
+            }
+            td:hover{
+                background-color: darkcyan;
+                color: lightblue;
+
+            }
+            th{
+            
+            }
+            #blanco:hover{
+                background-color: darkcyan;
+                color:lightblue;
+            }
+            
+            #blanco{
+                background-color: white ;
+                color: black;
+            }
+            
+            .contieneImagen{
+                text-align: center;
+            }
+
+            img:hover{
+                transform: scale(1.5);
+                transition: 0.5s;
+            }
+            .enlaces{
+                text-align: center;
+
+            }
+            
+            
+
+            td:nth-child(odd) {
+            background-color: rgba(150, 212, 212, 0.4);
+            color: teal;
+            }
+            th{
+                font-size: 30px;
+                background-color:darkcyan ;
+                color: wheat;
             }
             img{
-                width: 100px;
+                margin: auto;
+                width: 300px;
             }
+            .enlaces:hover{
+                font-size: 20px;
+                transition: 0.5s;
+              
+                
+            }
+            a:hover{
+                color: white;
+            }
+            
+
+            
         </style>
     </head>
     <body>
-        <table border="1">
+        <table >
             <tr>
                 <th>Superh&eacute;roe</th>
                 <th>Poderes</th>
@@ -22,35 +85,34 @@
             <tr>
                 <td rowspan="2">Batman</td>
                 <td>Inteligencia,habilidades de detective, habilidades marciales </td>
-                <td rowspan="2"><img src="https://www.mundodeportivo.com/alfabeta/hero/2023/11/batman-es-un-heroe-iconico-de-dc-1.png?width=1200&aspect_ratio=16:9"/> </td>
-                <td> <a href="https://es.wikipedia.org/wiki/Batman">M&aacute;s sobre batman</a></td>
+                <td rowspan="2" class="contieneImagen"><img src="https://www.mundodeportivo.com/alfabeta/hero/2023/11/batman-es-un-heroe-iconico-de-dc-1.png?width=1200&aspect_ratio=16:9"/> </td>
+                <td class="enlaces"> <a href="https://es.wikipedia.org/wiki/Batman">M&aacute;s sobre batman</a></td>
             </tr>
             <tr>
-                <td> Alias: El caballero oscuro</td>
+                <td id="blanco"> Alias: El caballero oscuro</td>
             </tr>
             <tr>
                 <td> Superman</td>
                 <td>Vuelo, super fuerza, visi&oacute;n de rayos X</td>
-                <td> <img src="https://phantom-elmundo.unidadeditorial.es/fffc80493df258cceb20d6e9ba055b7c/resize/473/f/webp/assets/multimedia/imagenes/2022/08/03/16595421832009.jpg" /></td>
-                <td> <a href="https://es.wikipedia.org/wiki/Superman">M&aacute;s sobre Superman</a></td>
+                <td class="contieneImagen"> <img src="https://phantom-elmundo.unidadeditorial.es/fffc80493df258cceb20d6e9ba055b7c/resize/473/f/webp/assets/multimedia/imagenes/2022/08/03/16595421832009.jpg" /></td>
+                <td class="enlaces"> <a href="https://es.wikipedia.org/wiki/Superman">M&aacute;s sobre Superman</a></td>
             </tr>
             <tr>
                 <td>Wonder Woman</td>
                 <td> Fuerza sobrehumana, habilidades de lucha, lazos de la verdad</td>
-                <td> <img src="https://www.akiracomics.com/imagenes/porreferencia?identidad=809d29e8-2a60-43f0-945b-7ba17627e4b0&referencia=&ancho=&alto="</td>
-                <td><a href="https://es.wikipedia.org/wiki/Mujer_Maravilla">M&aacute;s sobre Wonder Woman</a></td>
+                <td class="contieneImagen"> <img src="https://www.akiracomics.com/imagenes/porreferencia?identidad=809d29e8-2a60-43f0-945b-7ba17627e4b0&referencia=&ancho=&alto="/></td>
+                <td class="enlaces"><a href="https://es.wikipedia.org/wiki/Mujer_Maravilla">M&aacute;s sobre Wonder Woman</a></td>
             </tr>
             <tr>
                 <td rowspan="2">Flash</td>
                 <td> Velocidad sobrehumana, curvatura del tiempo</td>
-                <td rowspan="2"> <img src=""</td>
-                <td></td>
+                <td rowspan="2" class="contieneImagen"> <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/06/grant-gustin-como-barry-allen-flash-3054886.jpg?tf=1200x"/></td>
+                <td rowspan="2" class="enlaces"><a href="https://es.wikipedia.org/wiki/Flash_(historieta)">M&aacute;s sobre Flash</a></td>
             </tr>
-            <tr>
-                <td>Miembro de la liga de la justicia</td>
-                <td></td>
-                <td></td>
+            <tr id>
+                <td id="blanco">Miembro de la liga de la justicia</td>
             </tr>
         </table>
     </body>
 </html>
+
