@@ -11,9 +11,21 @@ body{
     list-style-type: none;
     
 }
-
+.textProducts p{
+    align-items: center;
+    font-weight: bolder;
+}
+.divPrincipal img{
+position: relative;
+}
+.divPrincipal p{
+    color: white;
+position: absolute;
+margin-top: 450;
+}
 ul li{
     display: inline-block;
+    padding: 30px;
 }
 
 .menus{
@@ -30,6 +42,10 @@ ul li{
     display: inline-block;
 }
 
+.lub:hover{
+    transform: scale(1.15);
+    transition: 1.2s;
+}
 div{
     display: flex;
 }
