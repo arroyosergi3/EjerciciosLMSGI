@@ -13,76 +13,121 @@
 
     </head>
     <body>
+
+        <!-- PRINCIPIO DEL HEADER -->
         <header>
             <div style="display: flex;">
                 <div style="background-color: #ffa8a4; width: 75%;" class="divsmenus">
                     <ul class="menus" >
-                        <li ><img src="images/logo.jpg" width="50px "</li>
-                        <li >Simple</li>
-                        <li >Doble</li>
-                        <li >Lubricantes</lI>
+                        <li > <a href="index.html"><img src="images/logo.jpg" class="logos" ></a></li>
+                        <li >
+                            <div class="dropdown">
+                                <button class="dropbtn">Top Ventas</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Juguetes</a>
+                                  <a href="#">Lubricantes</a>
+                                  <a href="#">Otros</a>
+                                </div>
+                              </div>
+                        </li>
+                        <li >
+                            <div class="dropdown">
+                                <button class="dropbtn">Juguetes</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Simples</a>
+                                  <a href="#">Dobles</a>
+                                  <a href="#">Satisfayers</a>
+                                </div>
+                              </div>
+                        </li>
+                        <li >
+                            <div class="dropdown">
+                                <button class="dropbtn">Lubricantes</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Para Juguetes</a>
+                                  <a href="#">Disfrute para dos</a>
+                                  <a href="#">Aceites de masaje</a>
+                                </div>
+                              </div>
+                        </lI>
                     </ul>
                 </div>
-                <div class="rigth" style="background-color: #5fe6e9; width: 25%">
+                <div class="rigth divsmenus" style="background-color: #0a87a7; width: 25%">
                     <ul class="menus">
-                        <li>Elemento 1</li>
-                        <li>Elemento 2</li>
+                        <li><button class="buttonMenus"> <a href="HTML/contacto.html">Contacto</a> </button></li>
+                        <li><button class="buttonMenus"><a href="HTML/distribuidores.html">Distribuidores</a></button></li>
                     </ul>
                 </div>
             </div>
         </header>
-        <div style=" width: 100%;"  class="divPrincipal">
+        <!-- FIN DEL HEADER -->
+
+
+
+
+        <div   class="divPrincipal">
             <img src="images/principal.jpg" width="100%" height="500px">
-            <p>Atr&eacute;vete a sacar tu lado m&aacute;s atrevido</p>
+            
         </div>
         <!-- 4 PRODUCTOS (lubs) -->
         <div style="width: 100%;">
-            <div class="lub" style="width: 25%; flex-direction: column">
-                <div style="height: 90%; width: 100%;">
-                    <img src="images/lub1.jpg" style="width: 100%; height: 100%;" />
+            
+            <div class="lub" onclick="redirectToPage('HTML/lub1.html')" >
+                    <div class="imageProduct">
+                        <img src="images/lub1.jpg" class="full" />
+                    </div>
+                    <div class="textProducts" >
+                        <p >Lubricante Efecto Calor y Fr&iacute;o</p>
+                    </div>
+                    <div class="textProducts" >
+                        <p>12.99€</p>
+                    </div>
+                </div> 
+            <div class="lub" onclick="redirectToPage('HTML/lub2.html')">
+                <div class="imageProduct">
+                    <img src="images/lub2.jpg" class="full"/>
                 </div>
-                <div class="textProducts" style="height: 5%; width: 100%; ">
-                    <p >Lubricante Efecto Calor y Fr&iacute;o</p>
-                </div>
-                <div class="textProducts" style="height: 5%; width: 100%; ">
-                    <p>12.99€</p>
-                </div>
-            </div>
-            <div class="lub" style="width: 25%; flex-direction: column">
-                <div style="height: 90%; width: 100%;">
-                    <img src="images/lub2.jpg" style="width: 100%; height: 100%;" />
-                </div>
-                <div class="textProducts" style="height: 5%; width: 100%; text-align: center;">
+                <div class="textProducts" >
                     <p >Lubricante Anest&eacute;sico</p>
                 </div>
-                <div class="textProducts" style="height: 5%; width: 100%; text-align: center; ">
+                <div class="textProducts" >
                     <p>22.99€</p>
                 </div>
             </div>
-            <div class="lub" style="width: 25%; flex-direction: column">
-                <div style="height: 90%; width: 100%;">
-                    <img src="images/lub3.jpg" style="width: 100%; height: 100%;" />
+            <div class="lub" onclick="redirectToPage('HTML/lub3.html')">
+                <div class="imageProduct">
+                    <img src="images/lub3.jpg" class="full" />
                 </div>
-                <div class="textProducts" style="height: 5%; width: 100%; text-align: center; ">
+                <div class="textProducts">
                     <p >Lubricante Toque De Seda</p>
                 </div>
-                <div class="textProducts" style="height: 5%; width: 100%; text-align: center;  ">
+                <div class="textProducts">
                     <p>14.99€</p>
                 </div>
             </div>
-            <div class="lub" style="width: 25%;  flex-direction: column;">
-                <div style="height: 90%; width: 100%;">
-                    <img src="images/lub4.jpg" style="width: 100%; height: 100%;" />
+            <div class="lub" onclick="redirectToPage('HTML/lub4.html')">
+                <div class="imageProduct">
+                    <img src="images/lub4.jpg" class="full" />
                 </div>
-                <div class="textProducts" style="height: 5%; width: 100%; text-align: center; ">
+                <div class="textProducts" >
                     <p >Lubricante Extra Suave</p>
                 </div>
-                <div class="textProducts" style="height: 5%; width: 100%; text-align: center; ">
+                <div class="textProducts">
                     <p>15.99€</p>
                 </div>
             </div>
-            
+           
+        
         </div>
+        <!-- FINAL 4 PRODUCTOS --> 
+
+        <script>
+            function redirectToPage(url) {
+                window.location.href = url;
+            }
+        </script>
+
+
         </div>
         <div>
 
@@ -103,7 +148,6 @@
             <br>
             <br>
             <br>
-
             <br>
             <br>
 
