@@ -1,0 +1,83 @@
+
+body {
+    margin: 0 ;
+}
+.main {
+    border: 4px solid red;
+    display: flex;
+    justify-content: space-around;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.uno {
+    background-color: #1abc9c;
+    flex: 1;
+    padding: 10px ;
+    order: 2;
+}
+
+.dos {
+    background-color: #3498db;
+    flex: 1;
+    padding: 10px ;
+    order: 3;
+}
+
+.tres {
+    background-color: #9b59b6;
+    flex: 1;
+    padding: 10px ;
+    order: 4;
+}
+
+.cuatro {
+    background-color: #34495e;
+    flex: 1;
+    padding: 10px ;
+    order: 5;
+}
+
+.cinco {
+    background-color: #f1c40f;
+    flex: 1;
+    padding: 10px ;
+    order: 1;
+}
+
+.seis {
+    background-color: #e67e22;;
+    flex: 1;
+    padding: 10px ;
+    order: 10;
+}
+
+.siete {
+    background-color: #e74c3c;
+    flex: 1;
+    padding: 10px ;
+    order: 6;
+}
+
+.ocho {
+    background-color: #bdc3c7;
+    flex: 1;
+    padding: 10px ;
+    order: 7;
+}
+
+.nueve {
+    background-color: #2ecc71;
+    flex: 1;
+    padding: 10px ;
+    order: 8;
+}
+
+.diez {
+    background-color: #16a085;
+    flex: 1;    
+    padding: 10px ;
+    order: 9;
+}
