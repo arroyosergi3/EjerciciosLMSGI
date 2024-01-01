@@ -2,75 +2,73 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Quicksand', sans-serif;
-    background-color: #0a87a7;
-}
 
+/* PÁGINA PRINCIPAL (INDEX)*/
 
-.over:hover{
-    opacity: 0%;
-    transition: 0.6s;
+.fondoVideos{
+    width: 100%;
+    height: 500px;
+    background-color: #ffa8a4;
+
 }
-.imagesMain{
-    margin-top: 50px;
+.fondoVideos div{
     text-align: center;
-     justify-content: center; 
-     align-items: center;
-     position: absolute;
+    margin: auto;
+    justify-content: center;
+    
 }
-
-/*.descProducts p{
-    background-color: #fffac6;
-    color: #0a87a7;
-}
-*/
 .divPrincipal{
     flex-direction: column;
-    height: 500px;
+    height: 300px;
     background-color: #fffac6;
 }
-
 .divPrincipal img{
-position: relative;
-width: 100%;
-}
-.divPrincipal p{
-    color: white;
-position: absolute;
-margin-top: 450;
-}
-.textoDivPrincipal{
-    background-color: #0a87a7;
-    color: #fffac6;
-}
-.right{
-    text-align: right;
-    background-color: #0a87a7; 
-    width: 25%
-}
-.titulo{
-    color: #0a87a7;
-    font-size: 50px;
-}
-
-.imageProduct{
-    height: 90%;
+    position: relative;
     width: 100%;
+    }
+    .divPrincipal p{
+        color: white;
+    position: absolute;
+    margin-top: 450;
+    }
 
-}
-.full{
-    height: 100%;
-    width: 100%;
-}
+
+    /* PÁGINA ANTE-PRODUCTO*/
+
+    .textoDivPrincipal{
+        font-size: larger;
+        background-color: #0a87a7;
+        color: #fffac6;
+    }
+
+    .textoGeneral{
+        width: 75%;
+        margin: auto;
+    }
+    .imageProduct{
+        height: 90%;
+        width: 100%;
+    
+    }
+    .titulo{
+        color: #0a87a7;
+        font-size: 50px;
+    }
+
+    .logoGrande{
+        width: 150px;
+        height: 150px;
+    }
 
 
-div{
-    display: flex;
-}
-/* Pagina */
 
-/* Pagina de Producto*/
+
+
+
+
+
+
+/* PÁGINA DE PRODUCTO*/
 .lub{
     width: 25%;
     flex-direction: column;
@@ -85,21 +83,17 @@ div{
     
    
 }
-
 .textProducts{
     height: 5%;
     width: 100%;
 
 }
-
 .name{
     font-size: 50px;
     background-color: #fffac6;
     color: #0a87a7;
     
 }
-
-
 .descProducts{
     color: #fffac6;
     width: 50%;  
@@ -114,7 +108,33 @@ div{
     align-items: center;
     font-weight: bolder;
 }
-/* Paginas Generales */
+.over:hover{
+    opacity: 0%;
+    transition: 0.6s;
+}
+.imagesMain{
+    margin-top: 50px;
+    text-align: center;
+     justify-content: center; 
+     align-items: center;
+     position: absolute;
+}
+.imagesMain img{
+    width: 50%;
+}
+.otros{
+    width: 50%;
+    flex-direction: column;
+    align-items: center
+}
+.otrosFoto a img{
+    width: 100%;
+}
+
+
+
+
+/* PÁGINAS GENERALES */
 .pagGeneral{
     width: 100%;
      height: 100vh; 
@@ -197,19 +217,73 @@ div{
 }
 
 
-/* Páginda de Contacto*/
-.form label{
-    font-size: 500px;
+
+
+/* PÁGINA DE CONTACTO*/
+.formulario {
+    background-color: #0a87a7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #fffac6;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
 }
-.form input{
+
+.formulario label {
     display: block;
+    margin-bottom: 8px;
+}
+
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formulario button {
+    background-color: #ffa8a4;
+    color: #fffac6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0a87a7;
+}
+
+/* PÁGINA DE DISTRIBUIDORES*/
+.divDistribuidores{
+    width: 100%;
+    height: 600px;
+    background-color: #fffac6;
+
+}
+.distribuidores{
+    margin-left: 20px;
+    width: 33%;
+    height: 100%;
+    flex-direction: column;
+
+}
+.distribuidores h2{
+    color: #0a87a7;
+    margin: auto;
+}
+.distribuidores p{
+    background-color: #0a87a7;
+    color: #ffa8a4;
+    margin: auto;
 }
 
 
-
-
- /* Menús y Header*/
+ /* MENÚS Y HEADER */
  .header{
     margin: 0;
     padding: 0;
@@ -246,26 +320,25 @@ ul li{
     text-align: center;
     
 }
+.divizq{
+    background-color: #ffa8a4;
+    width: 75%;
+}
 
 .logos{
     width: 50px;
 }
 .buttonMenus{
     background-color: #0a87a7;
+    color: #fffac6;
     padding: 16px;
     font-size: 16px;
     border: none;
 }
-.buttonMenus:hover{
-    background-color: #fffac6;
-    color: #0a87a7;
-    
-    
-   
+.header div{
+    display: flex;
 }
-.divsmenus a:hover{
-    color: #0a87a7;
-    }
+
 
 /* PRINCIPIO DEL DESPLEGABLE */
 .dropbtn {
@@ -316,6 +389,91 @@ ul li{
     background-color: #ffa8a4;
   }
 
+  /* FOOTER */
+  footer {
+    background-color: #0a87a7;
+    color: #fffac6;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+
+  .footer-links a {
+    color: #fffac6;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-social-icons {
+    margin-top: 20px;
+  }
+
+  .footer-social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffacac;
+  }
+
+  .footer-social-icons a:hover {
+    color: #ffa8a4;
+  }
+
+
+
+  /* POLITICA DE PRIVACIDAD Y TERMINOS Y CONDICIONES */
+  .priv{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffac6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .enl{
+    color: #0a87a7;
+  }
+  .enl:hover{
+    text-decoration: underline;
+  }
+
+  .tpriv{
+    color: #0a87a7;
+    
+  }
+
+
+  /* ESTILOS GENERALES */
+.mitadAncho{
+    width: 50%;
+}
+  div{
+    display: flex;
+}
+.full{
+    height: 100%;
+    width: 100%;
+}
+.right{
+    text-align: right;
+    background-color: #0a87a7; 
+    width: 25%
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #0a87a7;
+}
+.todoAncho{
+    width: 100%;
+}
+.textoAmarillo{
+    color: #fffac6;
+}
 
   
   
