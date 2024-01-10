@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+
+.main {
+    display: flex; /* flex es igual a inline-flex. Los elementos dentro de un flex son flex-items */
+    justify-content: center;
+    align-content: center;
+    border: 10px solid red;
+    flex-wrap: wrap;
+    height: 100vh; /* Utiliza el 100% del alto del viewport (parte visible de la página) */ 
+    box-sizing: border-box; /* Unifica en un único valor de cada div los siguientes: margin, padding y border*/ 
+}  
+
+.aaa {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 33.33%;
+    text-align: center;
+    padding: 20px 0px;
+    
+}
