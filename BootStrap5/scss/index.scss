@@ -1,0 +1,28 @@
+@import "_colors.scss";
+body{
+    background-color: $bg-color;
+    
+}
+.promocodes{
+    color: $promocodes;
+}
+
+.confirmation{
+color: white !important;
+background-color: $confimartion !important;
+}
+
+@mixin titulos($color) {
+    color: $color;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.yourCart{
+    @include titulos($titulos)
+}
+
+.titulos{
+    @include titulos(black)
+}
+

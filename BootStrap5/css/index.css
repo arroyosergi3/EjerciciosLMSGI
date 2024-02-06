@@ -1,0 +1,26 @@
+body {
+  background-color: lightgrey;
+}
+
+.promocodes {
+  color: green;
+}
+
+.confirmation {
+  color: white !important;
+  background-color: #0078ff !important;
+}
+
+.yourCart {
+  color: darkgrey;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.titulos {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=index.css.map */
